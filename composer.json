@@ -1,0 +1,13 @@
+{
+    "name": "wappr/wappr-action-test",
+    "description": "",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Wappr\\": "src/"
+        }
+    }
+}
