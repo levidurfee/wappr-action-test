@@ -1,0 +1,13 @@
+name: ApiGen
+
+on: [push]
+
+jobs:
+  apigen:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: ApiGen Docs Generator
+      uses: wappr/action-apigen@v0.3.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
